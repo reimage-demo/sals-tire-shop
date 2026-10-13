@@ -4,6 +4,7 @@ A plain HTML, CSS, and JavaScript site. The editable website is directly in this
 
 - `index.html` — page content, services, hours, telephone links, and structured business data.
 - `styles.css` — typography, colors, desktop and mobile layouts.
+- `landing-page.html` and `landing.css` — compact mobile contact page with a call button, Home link to `index.html`, address, hours, and REIMAGE BUSINESS SOLUTIONS credit.
 - `app.js` — progressive enhancement for the photo strip and accessible photo dialog.
 - `assets/` — self-hosted fonts, original photo conversions, optimized WebP photos, and hero imagery.
 
@@ -25,8 +26,8 @@ The hero is an AI-generated photographic illustration based on the supplied tire
 
 ## Verification
 
-JavaScript syntax, local HTTP assets, in-page anchor targets, consistent telephone links, all ten supplied photos, image alternate text, service/hour row counts, and absence of CSS gradients checked. Desktop hero visually reviewed in Chrome. Camera orientation corrected after browser inspection. The updated logo and header were visually checked in Chrome at 1440px desktop and 375px mobile widths. Full mobile-page and photo-dialog interaction QA remains unverified.
+JavaScript syntax, local HTTP assets, in-page anchor targets, consistent telephone links, all ten supplied photos, image alternate text, service/hour row counts, and absence of CSS gradients checked. Desktop hero visually reviewed in Chrome. Camera orientation corrected after browser inspection. The updated logo and header were visually checked in Chrome at 1440px desktop and 375px mobile widths. The contact landing page and website hero were visually checked at 320px and 375px widths. Both landing layouts show the full phone number, address, and credit without horizontal clipping. Local links and responsive asset paths pass static validation; full photo-dialog interaction QA remains unverified.
 
 ## Supplied logo
 
-The exact logo from Desktop/18EFD745-F9C9-4F2E-AEF2-01409A870802.PNG is retained in `assets/sal-tire-shop-logo-original.png`. Header and footer use a pixel-preserving lossless WebP copy, `assets/sal-tire-shop-logo.webp`. CSS hides the empty image margins without changing the artwork. Website brand colors sampled from the logo: green `#035E34`, red `#B51A23`, near-black `#080909`, with white as the main background. The favicon uses the three-stripe brand motif.
+The exact logo from Desktop/18EFD745-F9C9-4F2E-AEF2-01409A870802.PNG is retained in `assets/sal-tire-shop-logo-original.png`. A pixel-preserving lossless WebP master is retained at `assets/sal-tire-shop-logo.webp`; the pages serve the optimized 768px derivative. Photos include 480px and 800px responsive variants for smaller screens. CSS hides the empty image margins without changing the artwork. Website brand colors sampled from the logo: green `#035E34`, red `#B51A23`, near-black `#080909`, with white as the main background. The favicon uses the three-stripe brand motif.

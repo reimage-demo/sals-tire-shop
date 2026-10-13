@@ -508,6 +508,7 @@ address {
   display: none;
 }
 .gallery-controls button {
+  min-width: 48px;
   background: none;
   border: 0;
   color: var(--green);
@@ -526,6 +527,7 @@ address {
   color: #aeb5ae;
 }
 .photo-strip {
+  overscroll-behavior-inline: contain;
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -721,7 +723,7 @@ address {
 }
 @media (max-width: 760px) {
   .wrap {
-    width: calc(100% - 40px);
+    width: calc(100% - 32px);
   }
   .announcement {
     font-size: 0.69rem;
@@ -732,7 +734,7 @@ address {
     display: none;
   }
   .header-inner {
-    min-height: 112px;
+    min-height: 104px;
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 0;
@@ -745,24 +747,24 @@ address {
   .header-call {
     grid-column: 2;
     grid-row: 1;
-    min-height: 42px;
+    min-height: 44px;
     padding: 10px 19px;
   }
   nav {
     grid-column: 1/-1;
     grid-row: 2;
     justify-content: space-between;
-    gap: 18px;
+    gap: 12px;
     margin-top: 5px;
   }
   nav a {
-    font-size: 0.84rem;
+    font-size: 0.85rem;
     padding: 12px 0;
   }
   .hero {
-    min-height: 610px;
+    min-height: 0;
     display: block;
-    padding: 38px 20px 215px;
+    padding: 26px 16px 145px;
   }
   .hero-copy {
     width: 100%;
@@ -772,40 +774,40 @@ address {
   .hero-kicker {
     font-size: 0.67rem;
     letter-spacing: 0.13em;
-    margin-bottom: 17px;
+    margin-bottom: 12px;
   }
   .hero h1 {
-    font-size: clamp(3.9rem, 13vw, 5.8rem);
+    font-size: clamp(3.3rem, 14vw, 5.6rem);
     line-height: 0.95;
   }
   .hero-intro {
     font-size: 1rem;
     max-width: 290px;
-    margin-top: 18px;
+    margin-top: 14px;
   }
   .hero-call {
-    margin-top: 20px;
+    margin-top: 16px;
     font-size: 0.91rem;
     padding: 15px 24px;
   }
   .hero-location {
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     margin-top: 8px;
   }
   .hero-art img {
     width: 100%;
     left: 0;
-    bottom: -10px;
+    bottom: 0;
   }
   .hero-art {
     top: auto;
-    height: 230px;
+    height: 150px;
     overflow: hidden;
   }
   .visit-panel {
-    margin-top: 24px;
-    padding: 25px;
-    gap: 22px;
+    margin-top: 20px;
+    padding: 22px;
+    gap: 18px;
     grid-template-columns: 1fr;
   }
   .visit-panel h2 {
@@ -816,7 +818,7 @@ address {
     border-top: 1px solid var(--line);
   }
   .section {
-    padding-block: 43px;
+    padding-block: 36px;
   }
   .section-heading {
     display: block;
@@ -842,7 +844,7 @@ address {
     font-size: 1.55rem;
   }
   .service-photo img {
-    height: 360px;
+    height: 300px;
     object-position: center 66%;
   }
   .inventory-section {
@@ -883,9 +885,11 @@ address {
     gap: 9px;
   }
   .gallery-controls button {
+    min-width: 48px;
     font-size: 0.8rem;
   }
   .photo-strip {
+    overscroll-behavior-inline: contain;
     gap: 14px;
   }
   .gallery-photo {
@@ -943,16 +947,16 @@ address {
     width: 165px;
   }
   .hero {
-    min-height: 590px;
+    min-height: 0;
   }
   .hero h1 {
     font-size: 13.2vw;
   }
   .hero-art {
-    height: 195px;
+    height: 145px;
   }
   .hero-location {
-    font-size: 0.73rem;
+    font-size: 0.8rem;
   }
   .services-table tbody th {
     font-size: 0.92rem;
@@ -975,5 +979,33 @@ address {
   *::before,
   *::after {
     transition: none !important;
+  }
+}
+
+/* Keep narrow screens and larger text from forcing grid columns wider. */
+.visit-address,
+.hours-block,
+.price-board,
+.inventory-copy,
+.contact-details {
+  min-width: 0;
+}
+@media (max-width: 760px) {
+  nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .hero-call {
+    min-height: 52px;
+  }
+  .site-footer {
+    padding-bottom: max(25px, env(safe-area-inset-bottom));
+  }
+  .photo-dialog {
+    max-height: calc(100dvh - 24px);
+  }
+  .dialog-toolbar p {
+    overflow-wrap: anywhere;
   }
 }
