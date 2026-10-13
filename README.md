@@ -11,7 +11,7 @@ Open `index.html` directly or use any static server, including VS Code Live Serv
 
 ## Confirmed business details
 
-Name: Sal’s Tire Shop. Address: 631 Wethersfield Avenue, Hartford, CT. Phone: (860) 713-8348. Hours: 8 AM–6 PM every day, confirmed by the owner of this project in the conversation. Service prices transcribed from the supplied IMG_2011 photograph: tires $35, plugs $10, wheel balancing $10, mounting & balancing $20, tire rotation $30, rim inner cleaning $20, regular valve $10, tire pressure sensor valve $20. The page asks customers to confirm tire availability and their total by phone.
+Name: Sal’s Tire Shop. Inventory: used tires only, as confirmed by the user. Address: 631 Wethersfield Avenue, Hartford, CT. Phone: (860) 713-8348. Hours: 8 AM–6 PM every day, confirmed by the owner of this project in the conversation. Service prices transcribed from the supplied IMG_2011 photograph: used tires $35, plugs $10, wheel balancing $10, mounting & balancing $20, tire rotation $30, rim inner cleaning $20, regular valve $10, tire pressure sensor valve $20. The page asks customers to confirm tire availability and their total by phone.
 
 ## Design and assets
 
