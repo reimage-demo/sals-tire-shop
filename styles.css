@@ -247,12 +247,26 @@ nav a:hover {
   max-width: 1800px;
   margin-inline: auto;
 }
-.hero-art img {
+
+/* Each 500px-wide image viewport uses 75% of the previous desktop scale.
+   The background viewports remove only the transparent gap and top margin. */
+.hero-tire {
   position: absolute;
-  width: 100%;
-  max-width: none;
-  bottom: -5%;
+  top: 50%;
+  width: 24.4140625%;
+  aspect-ratio: 500 / 624;
+  transform: translateY(-50%);
+  background-image: url("assets/hero-tires.webp");
+  background-size: 307.2% auto;
+  background-repeat: no-repeat;
+}
+.hero-tire-left {
   left: 0;
+  background-position: left bottom;
+}
+.hero-tire-right {
+  right: 0;
+  background-position: right bottom;
 }
 .hero-copy {
   width: min(630px, 52vw);
@@ -650,9 +664,6 @@ address {
   .hero {
     min-height: 600px;
   }
-  .hero-art img {
-    bottom: -13%;
-  }
 }
 @media (max-width: 1100px) {
   .wrap {
@@ -676,11 +687,7 @@ address {
   .hero h1 {
     font-size: 8.4vw;
   }
-  .hero-art img {
-    width: 115%;
-    left: -7.5%;
-    bottom: 0;
-  }
+
   .visit-panel,
   .services-layout,
   .inventory-layout {
@@ -698,6 +705,11 @@ address {
   }
   .gallery-photo {
     flex-basis: calc((100% - 40px) / 3);
+  }
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .hero-tire {
+    width: 28.076171875%;
   }
 }
 @media (max-width: 760px) {
@@ -743,7 +755,9 @@ address {
   .hero {
     min-height: 0;
     display: block;
-    padding: 26px 16px 145px;
+    --mobile-tire-width: clamp(76px, 22vw, 104px);
+    padding: calc(var(--mobile-tire-width) * 1.248 + 24px) 16px
+      calc(var(--mobile-tire-width) * 1.248 + 24px);
   }
   .hero-copy {
     width: 100%;
@@ -773,16 +787,7 @@ address {
     font-size: 0.85rem;
     margin-top: 8px;
   }
-  .hero-art img {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-  }
-  .hero-art {
-    top: auto;
-    height: 150px;
-    overflow: hidden;
-  }
+
   .visit-panel {
     margin-top: 20px;
     padding: 22px;
@@ -925,9 +930,7 @@ address {
   .hero h1 {
     font-size: 13.2vw;
   }
-  .hero-art {
-    height: 145px;
-  }
+
   .hero-location {
     font-size: 0.8rem;
   }
@@ -1197,4 +1200,22 @@ address {
 }
 .has-call-shortcut .site-footer {
   padding-bottom: calc(94px + env(safe-area-inset-bottom));
+}
+
+/* Match Lorie’s independent corner placement, with whole tire groups on phones. */
+@media (max-width: 760px) {
+  .hero-tire {
+    width: var(--mobile-tire-width);
+    transform: none;
+  }
+  .hero-tire-left {
+    top: 12px;
+    left: 12px;
+    bottom: auto;
+  }
+  .hero-tire-right {
+    top: auto;
+    right: 12px;
+    bottom: 12px;
+  }
 }
