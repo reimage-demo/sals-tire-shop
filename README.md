@@ -30,7 +30,7 @@ JavaScript syntax, local HTTP assets, in-page anchor targets, consistent telepho
 
 ## Supplied logo
 
-The exact logo from Desktop/18EFD745-F9C9-4F2E-AEF2-01409A870802.PNG is retained in `assets/sal-tire-shop-logo-original.png`. A pixel-preserving lossless WebP master is retained at `assets/sal-tire-shop-logo.webp`; the pages serve the optimized 768px derivative. Photos include 480px and 800px responsive variants for smaller screens. CSS hides the empty image margins without changing the artwork. Website brand colors sampled from the logo: green `#035E34`, red `#B51A23`, near-black `#080909`, with white as the main background. The favicon uses the three-stripe brand motif.
+The exact logo from Desktop/18EFD745-F9C9-4F2E-AEF2-01409A870802.PNG is retained in `assets/sal-tire-shop-logo-original.png`. Compressed WebP versions serve social previews and the 768px page logo; the original PNG is retained unchanged. Photos include 480px and 800px responsive variants for smaller screens. CSS hides the empty image margins without changing the artwork. Website brand colors sampled from the logo: green `#035E34`, red `#B51A23`, near-black `#080909`, with white as the main background. The favicon uses the three-stripe brand motif.
 
 ## Public deployment and discovery
 
@@ -43,3 +43,7 @@ Photos keep `alt` descriptions in HTML and in the photo viewer. Visible photo ca
 GitHub project sites are hosted under a subpath: the included `robots.txt` is ready for root-domain hosting but cannot control the account domain's crawlers from `/sals-tire-shop/robots.txt`. Current pages permit indexing through meta directives; submit `sitemap.xml` in an owner-verified search console when available. No ranking, indexing, or AI inclusion is guaranteed, and `llms.txt` is supplemental rather than a search-engine requirement.
 
 Implementation references: Google AI/search guidance (https://developers.google.com/search/docs/appearance/ai-features), robots scope (https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec), GitHub privacy (https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement), and ADA web guidance (https://www.ada.gov/resources/web-guidance/).
+
+## Image loading
+
+Photos use compressed WebP at 480px, 800px, and 1200px widths. The logo and hero load immediately. An IntersectionObserver requests shop photos within 150px of the viewport; horizontally hidden gallery photos wait until they enter view. Image dimensions reserve their layout space. No-JavaScript visitors receive the same photos with native lazy loading through noscript fallbacks. The photo viewer fetches its full-size image only when opened.

@@ -1,5 +1,31 @@
 "use strict";
 
+// No-JavaScript visitors receive native lazy-loaded images through <noscript>.
+// Keep real photo URLs out of src/srcset until the image is near the viewport.
+const deferredPhotos = document.querySelectorAll("img[data-src]");
+const loadPhoto = (image) => {
+  image.loading = "eager";
+  if (image.dataset.srcset) image.srcset = image.dataset.srcset;
+  image.src = image.dataset.src;
+  delete image.dataset.srcset;
+  delete image.dataset.src;
+};
+if ("IntersectionObserver" in window) {
+  const photoObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        loadPhoto(entry.target);
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "150px 0px", threshold: 0 },
+  );
+  deferredPhotos.forEach((image) => photoObserver.observe(image));
+} else {
+  deferredPhotos.forEach(loadPhoto);
+}
+
 // The page, prices, phone links and directions work without JavaScript.
 const strip = document.querySelector(".photo-strip");
 const previous = document.querySelector("[data-gallery-prev]");
