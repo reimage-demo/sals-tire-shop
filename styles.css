@@ -262,7 +262,7 @@ nav a:hover {
   font-size: 0.76rem;
   font-weight: 600;
   letter-spacing: 0.17em;
-  color: var(--green);
+  color: var(--red);
   margin-bottom: 22px;
 }
 .hero h1 {
