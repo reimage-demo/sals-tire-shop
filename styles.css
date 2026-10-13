@@ -1017,29 +1017,87 @@ address {
   justify-content: flex-end;
 }
 .shop-faq {
-  max-width: 940px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  align-items: start;
+  gap: 48px;
 }
 .shop-faq h2 {
-  margin-bottom: 20px;
+  max-width: 10ch;
+  font-family: Barlow, Arial, sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0;
+  color: var(--green);
+}
+.faq-list {
+  min-width: 0;
 }
 .shop-faq details {
   border-top: 1px solid var(--line);
-  padding: 4px 0;
 }
 .shop-faq details:last-child {
   border-bottom: 1px solid var(--line);
 }
 .shop-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 68px;
+  padding: 20px 0;
+  list-style: none;
   cursor: pointer;
-  padding: 18px 0;
   font-weight: 600;
   font-size: 1.1rem;
+  line-height: 1.45;
+}
+.shop-faq summary::-webkit-details-marker {
+  display: none;
+}
+.shop-faq summary::marker {
+  content: "";
+}
+.shop-faq summary::after {
+  content: "+";
+  flex: 0 0 24px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--green);
+}
+.shop-faq details[open] summary::after {
+  content: "−";
+}
+.shop-faq summary:hover {
+  color: var(--green);
 }
 .shop-faq details p {
-  max-width: 720px;
-  margin: 0 0 20px;
-  line-height: 1.65;
+  max-width: 62ch;
+  margin: 0;
+  padding: 0 40px 24px 0;
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--muted);
+}
+@media (max-width: 760px) {
+  .shop-faq {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .shop-faq h2 {
+    max-width: none;
+    font-size: 1.8rem;
+  }
+  .shop-faq summary {
+    gap: 16px;
+    font-size: 1rem;
+  }
+  .shop-faq details p {
+    padding-right: 0;
+  }
 }
 .policy-header {
   display: flex;
