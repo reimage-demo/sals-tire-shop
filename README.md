@@ -25,4 +25,8 @@ The hero is an AI-generated photographic illustration based on the supplied tire
 
 ## Verification
 
-JavaScript syntax, local HTTP assets, in-page anchor targets, consistent telephone links, all ten supplied photos, image alternate text, service/hour row counts, and absence of CSS gradients checked. Desktop hero visually reviewed in Chrome. Camera orientation corrected after browser inspection. Mobile CSS is included; automated browser access was unavailable and native Chrome access was interrupted by user activity, so full mobile and photo-dialog interaction QA remains unverified.
+JavaScript syntax, local HTTP assets, in-page anchor targets, consistent telephone links, all ten supplied photos, image alternate text, service/hour row counts, and absence of CSS gradients checked. Desktop hero visually reviewed in Chrome. Camera orientation corrected after browser inspection. The updated logo and header were visually checked in Chrome at 1440px desktop and 375px mobile widths. Full mobile-page and photo-dialog interaction QA remains unverified.
+
+## Supplied logo
+
+The exact logo from Desktop/18EFD745-F9C9-4F2E-AEF2-01409A870802.PNG is retained in `assets/sal-tire-shop-logo-original.png`. Header and footer use a pixel-preserving lossless WebP copy, `assets/sal-tire-shop-logo.webp`. CSS hides the empty image margins without changing the artwork. Website brand colors sampled from the logo: green `#035E34`, red `#B51A23`, near-black `#080909`, with white as the main background. The favicon uses the three-stripe brand motif.
