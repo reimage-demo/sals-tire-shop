@@ -31,3 +31,15 @@ JavaScript syntax, local HTTP assets, in-page anchor targets, consistent telepho
 ## Supplied logo
 
 The exact logo from Desktop/18EFD745-F9C9-4F2E-AEF2-01409A870802.PNG is retained in `assets/sal-tire-shop-logo-original.png`. A pixel-preserving lossless WebP master is retained at `assets/sal-tire-shop-logo.webp`; the pages serve the optimized 768px derivative. Photos include 480px and 800px responsive variants for smaller screens. CSS hides the empty image margins without changing the artwork. Website brand colors sampled from the logo: green `#035E34`, red `#B51A23`, near-black `#080909`, with white as the main background. The favicon uses the three-stripe brand motif.
+
+## Public deployment and discovery
+
+Public canonical URL: https://reimage-demo.github.io/sals-tire-shop/. GitHub Pages deploys the root files from `main`. `.nojekyll` preserves the plain static site. The private Sites preview is a separate earlier deployment.
+
+The main footer links to `legal.html`, `privacy.html`, `terms.html`, and `accessibility.html`, with the linked REIMAGE credit. The contact landing page deliberately has no legal navigation. Policy content describes this static site's actual features; it does not invent shop warranty, refund, data retention, or accessibility certification claims.
+
+Photos keep `alt` descriptions in HTML and in the photo viewer. Visible photo captions are removed. SEO includes canonical URLs, Open Graph/Twitter previews, business/site/page JSON-LD, an image sitemap, visible answers, and crawlable local business facts. `business.json` and `llms.txt` mirror confirmed information. Keep these updated when business details change.
+
+GitHub project sites are hosted under a subpath: the included `robots.txt` is ready for root-domain hosting but cannot control the account domain's crawlers from `/sals-tire-shop/robots.txt`. Current pages permit indexing through meta directives; submit `sitemap.xml` in an owner-verified search console when available. No ranking, indexing, or AI inclusion is guaranteed, and `llms.txt` is supplemental rather than a search-engine requirement.
+
+Implementation references: Google AI/search guidance (https://developers.google.com/search/docs/appearance/ai-features), robots scope (https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec), GitHub privacy (https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement), and ADA web guidance (https://www.ada.gov/resources/web-guidance/).

@@ -26,32 +26,211 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "TireShop",
-        "name": "Sal’s Tire Shop",
-        "telephone": "+18607138348",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "631 Wethersfield Avenue",
-          "addressLocality": "Hartford",
-          "addressRegion": "CT",
-          "addressCountry": "US"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
-        }
+        "@graph": [
+          {
+            "@type": "TireShop",
+            "name": "Sal’s Tire Shop",
+            "telephone": "+18607138348",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "631 Wethersfield Avenue",
+              "addressLocality": "Hartford",
+              "addressRegion": "CT",
+              "addressCountry": "US"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "08:00",
+              "closes": "18:00"
+            },
+            "@id": "https://reimage-demo.github.io/sals-tire-shop/#business",
+            "url": "https://reimage-demo.github.io/sals-tire-shop/",
+            "logo": "https://reimage-demo.github.io/sals-tire-shop/assets/sal-tire-shop-logo-768.webp",
+            "image": [
+              "https://reimage-demo.github.io/sals-tire-shop/assets/photos/IMG_2013.webp",
+              "https://reimage-demo.github.io/sals-tire-shop/assets/photos/IMG_2017.webp"
+            ],
+            "description": "Used tires and tire service at 631 Wethersfield Avenue, Hartford, Connecticut. Open every day, 8 AM–6 PM.",
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=631+Wethersfield+Avenue+Hartford+CT",
+            "sameAs": [
+              "https://reimagebs.com/marketplace/businesses/sals-tire-shop/"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Tires and tire service",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Used tires",
+                    "provider": {
+                      "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+                    }
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Tire plugs",
+                    "provider": {
+                      "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+                    }
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Wheel balancing",
+                    "provider": {
+                      "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+                    }
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Mounting and balancing",
+                    "provider": {
+                      "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+                    }
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Tire rotation",
+                    "provider": {
+                      "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+                    }
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Rim inner cleaning",
+                    "provider": {
+                      "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+                    }
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Regular valve service",
+                    "provider": {
+                      "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+                    }
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Tire pressure sensor valve service",
+                    "provider": {
+                      "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reimage-demo.github.io/sals-tire-shop/#website",
+            "url": "https://reimage-demo.github.io/sals-tire-shop/",
+            "name": "Sal’s Tire Shop",
+            "publisher": {
+              "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://reimage-demo.github.io/sals-tire-shop/#webpage",
+            "url": "https://reimage-demo.github.io/sals-tire-shop/",
+            "name": "Sal’s Tire Shop | Used Tires in Hartford, CT",
+            "about": {
+              "@id": "https://reimage-demo.github.io/sals-tire-shop/#business"
+            },
+            "isPartOf": {
+              "@id": "https://reimage-demo.github.io/sals-tire-shop/#website"
+            },
+            "inLanguage": "en-US"
+          }
+        ]
       }
     </script>
+    <link
+      rel="canonical"
+      href="https://reimage-demo.github.io/sals-tire-shop/"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Sal’s Tire Shop" />
+    <meta
+      property="og:title"
+      content="Sal’s Tire Shop | Used Tires in Hartford, CT"
+    />
+    <meta
+      property="og:description"
+      content="Used tires, plugs, balancing, mounting and tire rotation at Sal’s Tire Shop. 631 Wethersfield Avenue, Hartford. Open daily 8 AM–6 PM. Call (860) 713-8348."
+    />
+    <meta
+      property="og:url"
+      content="https://reimage-demo.github.io/sals-tire-shop/"
+    />
+    <meta
+      property="og:image"
+      content="https://reimage-demo.github.io/sals-tire-shop/assets/sal-tire-shop-logo.webp"
+    />
+    <meta property="og:image:width" content="1774" />
+    <meta property="og:image:height" content="887" />
+    <meta
+      property="og:image:alt"
+      content="Sal Tire Shop logo with green, black, and red stripes"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sal’s Tire Shop | Used Tires in Hartford, CT"
+    />
+    <meta
+      name="twitter:description"
+      content="Used tires, plugs, balancing, mounting and tire rotation at Sal’s Tire Shop. 631 Wethersfield Avenue, Hartford. Open daily 8 AM–6 PM. Call (860) 713-8348."
+    />
+    <meta
+      name="twitter:image"
+      content="https://reimage-demo.github.io/sals-tire-shop/assets/sal-tire-shop-logo.webp"
+    />
+    <meta name="twitter:image:alt" content="Sal Tire Shop logo" />
+    <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="business.json"
+      title="Sal’s Tire Shop business information"
+    />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -232,7 +411,6 @@
               height="1600"
               loading="lazy"
             />
-            <figcaption>Real tires. A real neighborhood shop.</figcaption>
           </figure>
         </div>
       </section>
@@ -318,10 +496,6 @@
             height="1600"
             loading="lazy"
           />
-          <figcaption>
-            <span>Sal’s Tire Shop · Hartford, CT</span
-            ><span>Open every day, 8 AM–6 PM</span>
-          </figcaption>
         </figure>
         <div class="gallery-heading">
           <h3>Around the shop</h3>
@@ -347,10 +521,7 @@
           aria-label="Photos of Sal’s Tire Shop"
           tabindex="0"
         >
-          <a
-            href="assets/photos/IMG_2011.webp"
-            class="gallery-photo"
-            data-caption="The service board outside the shop"
+          <a href="assets/photos/IMG_2011.webp" class="gallery-photo"
             ><img
               srcset="
                 assets/photos/IMG_2011-480.webp  480w,
@@ -364,12 +535,8 @@
               width="1200"
               height="1600"
               loading="lazy"
-            /><span>The service board</span></a
-          >
-          <a
-            href="assets/photos/IMG_2012.webp"
-            class="gallery-photo"
-            data-caption="Look for the green sign on Wethersfield Avenue"
+          /></a>
+          <a href="assets/photos/IMG_2012.webp" class="gallery-photo"
             ><img
               srcset="
                 assets/photos/IMG_2012-480.webp  480w,
@@ -383,12 +550,8 @@
               width="1200"
               height="1600"
               loading="lazy"
-            /><span>Look for the green sign</span></a
-          >
-          <a
-            href="assets/photos/IMG_2014.webp"
-            class="gallery-photo"
-            data-caption="The tire service area beside the storefront"
+          /></a>
+          <a href="assets/photos/IMG_2014.webp" class="gallery-photo"
             ><img
               srcset="
                 assets/photos/IMG_2014-480.webp  480w,
@@ -402,12 +565,8 @@
               width="1200"
               height="1600"
               loading="lazy"
-            /><span>Right beside the shop</span></a
-          >
-          <a
-            href="assets/photos/IMG_2015.webp"
-            class="gallery-photo"
-            data-caption="The storefront at 631 Wethersfield Avenue"
+          /></a>
+          <a href="assets/photos/IMG_2015.webp" class="gallery-photo"
             ><img
               srcset="
                 assets/photos/IMG_2015-480.webp  480w,
@@ -421,12 +580,8 @@
               width="1200"
               height="1600"
               loading="lazy"
-            /><span>On Wethersfield Avenue</span></a
-          >
-          <a
-            href="assets/photos/IMG_2016.webp"
-            class="gallery-photo"
-            data-caption="Tires displayed at the front of the shop"
+          /></a>
+          <a href="assets/photos/IMG_2016.webp" class="gallery-photo"
             ><img
               srcset="
                 assets/photos/IMG_2016-480.webp  480w,
@@ -440,12 +595,8 @@
               width="1200"
               height="1600"
               loading="lazy"
-            /><span>Tires out front</span></a
-          >
-          <a
-            href="assets/photos/IMG_2020.webp"
-            class="gallery-photo"
-            data-caption="A closer look at the tire selection"
+          /></a>
+          <a href="assets/photos/IMG_2020.webp" class="gallery-photo"
             ><img
               srcset="
                 assets/photos/IMG_2020-480.webp  480w,
@@ -459,11 +610,35 @@
               width="1200"
               height="1600"
               loading="lazy"
-            /><span>A look at the selection</span></a
-          >
+          /></a>
         </div>
       </section>
 
+      <section class="wrap section shop-faq" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Before you stop by.</h2>
+        <details>
+          <summary>Does Sal’s sell new tires?</summary>
+          <p>
+            Sal’s Tire Shop sells used tires only. Call (860) 713-8348 with your
+            tire size to check availability.
+          </p>
+        </details>
+        <details>
+          <summary>What tire services are available?</summary>
+          <p>
+            We offer tire plugs, wheel balancing, mounting and balancing, tire
+            rotation, rim inner cleaning, regular valves, and tire pressure
+            sensor valves.
+          </p>
+        </details>
+        <details>
+          <summary>When is Sal’s Tire Shop open?</summary>
+          <p>
+            We are open every day from 8 AM to 6 PM at 631 Wethersfield Avenue,
+            Hartford, Connecticut.
+          </p>
+        </details>
+      </section>
       <section class="contact-section" aria-labelledby="contact-heading">
         <div class="wrap contact-layout">
           <div>
@@ -491,20 +666,30 @@
       </section>
     </main>
     <footer class="wrap site-footer">
-      <a class="brand" href="./" aria-label="Sal’s Tire Shop home"
+      <a class="brand" href="index.html" aria-label="Sal’s Tire Shop home"
         ><img
           src="assets/sal-tire-shop-logo-768.webp"
           alt="Sal Tire Shop"
-          width="1774"
-          height="887"
-          decoding="async"
-      /></a>
-      <p>Used tires. Hartford, Connecticut.</p>
-      <a href="#main" class="text-link">Back to top</a>
+          width="768"
+          height="384" /></a
+      ><a href="index.html#main" class="text-link">Home</a>
+      <nav class="footer-links" aria-label="Legal and accessibility">
+        <a href="legal.html">Legal</a><a href="privacy.html">Privacy</a
+        ><a href="terms.html">Terms</a
+        ><a href="accessibility.html">Accessibility</a>
+      </nav>
+      <p class="site-credit">
+        Powered by
+        <a
+          href="https://reimagebs.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >REIMAGE BUSINESS SOLUTIONS</a
+        >
+      </p>
     </footer>
-    <dialog class="photo-dialog" aria-labelledby="photo-caption">
+    <dialog class="photo-dialog" aria-label="Shop photo viewer">
       <div class="dialog-toolbar">
-        <p id="photo-caption"></p>
         <button type="button" class="dialog-close">Close photo</button>
       </div>
       <img

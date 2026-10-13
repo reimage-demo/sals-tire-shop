@@ -1,0 +1,18 @@
+# Sal’s Tire Shop
+
+> Used tires and tire service in Hartford, Connecticut.
+
+Sal’s sells used tires only. Address: 631 Wethersfield Avenue, Hartford, Connecticut. Phone: (860) 713-8348. Open every day, 8 AM–6 PM, America/New_York. Call to confirm tire sizes, availability, prices, and total. There is no online ordering or appointment booking.
+
+Services: used tires, plugs, wheel balancing, mounting and balancing, tire rotation, rim inner cleaning, regular valve service, and tire pressure sensor valve service.
+
+## Website
+- [Shop, services, prices, hours, and address](https://reimage-demo.github.io/sals-tire-shop/)
+- [Call and directions](https://reimage-demo.github.io/sals-tire-shop/landing-page.html)
+- [Machine-readable business facts](https://reimage-demo.github.io/sals-tire-shop/business.json)
+- [Legal information](https://reimage-demo.github.io/sals-tire-shop/legal.html)
+- [Privacy](https://reimage-demo.github.io/sals-tire-shop/privacy.html)
+- [Terms](https://reimage-demo.github.io/sals-tire-shop/terms.html)
+- [Accessibility](https://reimage-demo.github.io/sals-tire-shop/accessibility.html)
+
+Information updated October 13, 2026. Use the live shop page for posted service prices; call Sal’s to confirm current availability and totals.

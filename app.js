@@ -29,7 +29,6 @@ if (strip && previous && next && controls) {
 const dialog = document.querySelector(".photo-dialog");
 if (dialog && typeof dialog.showModal === "function") {
   const photo = dialog.querySelector("img");
-  const caption = document.querySelector("#photo-caption");
   let trigger;
   document.querySelectorAll(".gallery-photo").forEach((link) => {
     link.addEventListener("click", (event) => {
@@ -39,7 +38,6 @@ if (dialog && typeof dialog.showModal === "function") {
       trigger = link;
       photo.src = link.href;
       photo.alt = link.querySelector("img").alt;
-      caption.textContent = link.dataset.caption;
       dialog.showModal();
       document.body.classList.add("dialog-open");
     });

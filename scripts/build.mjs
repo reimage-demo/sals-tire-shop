@@ -6,6 +6,15 @@ for (const file of [
   "app.js",
   "landing-page.html",
   "landing.css",
+  "legal.html",
+  "privacy.html",
+  "terms.html",
+  "accessibility.html",
+  "sitemap.xml",
+  "robots.txt",
+  "llms.txt",
+  "business.json",
+  ".nojekyll",
 ])
   await copyFile(file, `dist/${file}`);
 await cp("assets", "dist/assets", {

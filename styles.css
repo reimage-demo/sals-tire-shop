@@ -432,11 +432,7 @@ address {
   object-fit: cover;
   object-position: center 61%;
 }
-.service-photo figcaption {
-  font-size: 0.8rem;
-  color: var(--muted);
-  padding-top: 12px;
-}
+
 .inventory-section {
   background: var(--soft);
   padding: 56px 0;
@@ -485,14 +481,7 @@ address {
   object-fit: cover;
   object-position: center 61%;
 }
-.storefront figcaption {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  font-size: 0.83rem;
-  color: var(--muted);
-  padding-block: 12px;
-}
+
 .gallery-heading {
   display: flex;
   align-items: center;
@@ -549,15 +538,7 @@ address {
 .gallery-photo:first-child img {
   object-position: center 65%;
 }
-.gallery-photo span {
-  display: block;
-  font-size: 0.84rem;
-  padding: 12px 0 2px;
-}
-.gallery-photo:hover span {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
+
 .contact-section {
   background: var(--green);
   color: #fff;
@@ -647,9 +628,7 @@ address {
   gap: 20px;
   margin-bottom: 14px;
 }
-.dialog-toolbar p {
-  font-size: 0.9rem;
-}
+
 .dialog-close {
   background: var(--green);
   color: #fff;
@@ -870,11 +849,7 @@ address {
     height: 310px;
     object-position: center 64%;
   }
-  .storefront figcaption {
-    font-size: 0.7rem;
-    gap: 12px;
-    line-height: 1.5;
-  }
+
   .gallery-heading {
     margin-top: 23px;
   }
@@ -934,9 +909,7 @@ address {
   .dialog-toolbar {
     gap: 10px;
   }
-  .dialog-toolbar p {
-    font-size: 0.78rem;
-  }
+
   .dialog-close {
     font-size: 0.8rem;
     padding-inline: 13px;
@@ -1005,7 +978,133 @@ address {
   .photo-dialog {
     max-height: calc(100dvh - 24px);
   }
-  .dialog-toolbar p {
-    overflow-wrap: anywhere;
+}
+
+/* Legal navigation belongs to the full website, not the contact landing page. */
+.site-footer {
+  flex-wrap: wrap;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 22px;
+  justify-content: flex-end;
+}
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.88rem;
+  text-underline-offset: 4px;
+}
+.site-footer .site-credit {
+  flex-basis: 100%;
+  border-top: 1px solid var(--line);
+  margin: 0;
+  padding-top: 18px;
+  text-align: right;
+  font-size: 0.8rem;
+}
+.site-credit a {
+  display: inline-block;
+  min-height: 44px;
+  padding: 12px 0;
+  color: var(--green);
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+.dialog-toolbar {
+  justify-content: flex-end;
+}
+.shop-faq {
+  max-width: 940px;
+}
+.shop-faq h2 {
+  margin-bottom: 20px;
+}
+.shop-faq details {
+  border-top: 1px solid var(--line);
+  padding: 4px 0;
+}
+.shop-faq details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.shop-faq summary {
+  cursor: pointer;
+  padding: 18px 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.shop-faq details p {
+  max-width: 720px;
+  margin: 0 0 20px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.policy-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 24px;
+  border-bottom: 1px solid var(--line);
+}
+.policy-header .brand {
+  width: min(240px, 55%);
+}
+.policy-content {
+  max-width: 800px;
+  padding-block: 44px 60px;
+}
+.policy-content h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+.policy-content h2 {
+  font-family: Barlow, Arial, sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  margin: 30px 0 12px;
+}
+.policy-content p,
+.policy-content li {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+.policy-content p {
+  margin: 0 0 16px;
+}
+.policy-content ul {
+  padding-left: 24px;
+}
+.policy-content li {
+  margin-bottom: 10px;
+}
+.policy-content a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--green);
+  overflow-wrap: anywhere;
+}
+.policy-content .policy-date {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+@media (max-width: 760px) {
+  .footer-links {
+    flex-basis: 100%;
+    justify-content: flex-start;
+    gap: 4px 20px;
+  }
+  .site-footer .site-credit {
+    text-align: left;
+  }
+  .policy-header {
+    padding-block: 20px;
+  }
+  .policy-content {
+    padding-block: 30px 40px;
   }
 }

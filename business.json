@@ -1,0 +1,27 @@
+{
+  "name": "Sal’s Tire Shop",
+  "url": "https://reimage-demo.github.io/sals-tire-shop/",
+  "telephone": "+18607138348",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "631 Wethersfield Avenue",
+    "addressLocality": "Hartford",
+    "addressRegion": "CT",
+    "addressCountry": "US"
+  },
+  "hours": "Every day, 08:00–18:00 America/New_York",
+  "inventory": "Used tires only",
+  "services": [
+    "Used tires",
+    "Tire plugs",
+    "Wheel balancing",
+    "Mounting and balancing",
+    "Tire rotation",
+    "Rim inner cleaning",
+    "Regular valve service",
+    "Tire pressure sensor valve service"
+  ],
+  "availability": "Call to confirm tire size, availability, and total.",
+  "logo": "https://reimage-demo.github.io/sals-tire-shop/assets/sal-tire-shop-logo-768.webp",
+  "updated": "2026-10-13"
+}
