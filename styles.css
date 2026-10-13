@@ -119,7 +119,7 @@ a:hover {
   transition: background 0.18s;
 }
 .button:hover {
-  background: var(--green-dark);
+  background: #024927;
   color: #fff;
 }
 .text-link {
@@ -1107,4 +1107,36 @@ address {
   .policy-content {
     padding-block: 30px 40px;
   }
+}
+
+/* Persistent tap-to-call shortcut on the full website. */
+.floating-call {
+  position: fixed;
+  right: max(18px, env(safe-area-inset-right));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.floating-call:hover {
+  background: #024927;
+}
+.floating-call:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 4px;
+}
+.floating-call svg {
+  display: block;
+  pointer-events: none;
+}
+.has-call-shortcut .site-footer {
+  padding-bottom: calc(94px + env(safe-area-inset-bottom));
 }
